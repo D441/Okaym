@@ -1,0 +1,48 @@
+<html>
+	<head></head>
+	<body>
+		<h1 style="color: green;">Все товары по 3000 рублей.</h1>
+		<h2>Сумма товаров:</h2>
+		<h2 class="tab">0</h2>
+		<div style="display: flex;">
+			<div style="text-align: center">
+				<img src="img1.jpg" style="height: 350px;">
+				<h4>3000 руб.</h4>
+				<button style="background-color: green; color: white; border-color: green" class="b1">Купить SONY</button>
+			</div>
+			<div style="text-align: center">
+				<img src="img2.jpg" style="height: 350px;">
+				<h4>3000 руб.</h4>
+				<button style="background-color: green; color: white; border-color: green" class="b2">Купить JBL</button>
+			</div>
+			<div style="text-align: center">
+				<img src="img3.jpg" style="height: 350px;">
+				<h4>3000 руб.</h4>
+				<button style="background-color: green; color: white; border-color: green" class="b3">Купить JAYS</button>
+			</div>
+			<div style="text-align: center">
+				<img src="img4.jpg" style="height: 350px;">
+				<h4>3000 руб.</h4>
+				<button style="background-color: green; color: white; border-color: green" class="b4">Купить NONAME</button>
+			</div>
+		</div>
+		<script type="text/javascript">
+			let cart = 0;
+			let misha = function(){
+				cart = cart + 3000;
+				document.querySelector(".tab").innerHTML = cart;
+			}
+			let x = function(){
+				alert("Привет")
+				document.querySelector(".b1").style.background = "red"
+				document.querySelector(".b1").innerHTML = "Распродано";
+
+			}
+			document.querySelector(".b1").onclick = misha;
+			document.querySelector(".b2").onclick = misha;
+			document.querySelector(".b3").onclick = misha;
+			document.querySelector(".b4").onclick = misha;
+			setTimeout(x, 3000);
+		</script>
+	</body>
+</html>
